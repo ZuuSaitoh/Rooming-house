@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khu căn hộ dịch vụ và phòng trọ cao cấp An Nhiên House. Thiết kế hiện đại, sạch sẽ, giờ giấc tự do, khóa vân tay, camera an ninh 24/7. Xem ngay danh sách phòng Studio, 1PN, phòng có gác!">
+    <meta name="keywords" content="nhà trọ cao cấp, căn hộ dịch vụ, phòng trọ studio, phòng trọ 1pn, phòng có gác lửng, phòng trọ tự do, thuê phòng trọ giá rẻ, an nhiên house">
+    <meta name="author" content="An Nhiên House">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://annhienhouse.vn/">
+    <meta property="og:title" content="An Nhiên House | Căn Hộ Dịch Vụ & Phòng Trọ Cao Cấp Tiện Nghi">
+    <meta property="og:description" content="Không gian sống lý tưởng - Giờ giấc tự do - An tâm tuyệt đối. Đầy đủ tiện ích khóa vân tay, camera giám sát, bãi xe rộng rãi, vệ sinh sạch sẽ.">
+    <meta property="og:image" content="assets/images/room_studio.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://annhienhouse.vn/">
+    <meta property="twitter:title" content="An Nhiên House | Căn Hộ Dịch Vụ & Phòng Trọ Cao Cấp Tiện Nghi">
+    <meta property="twitter:description" content="Không gian sống lý tưởng - Giờ giấc tự do - An tâm tuyệt đối. Đầy đủ tiện ích khóa vân tay, camera giám sát, bãi xe rộng rãi, vệ sinh sạch sẽ.">
+    <meta property="twitter:image" content="assets/images/room_studio.png">
+
+    <title>An Nhiên House | Căn Hộ Dịch Vụ & Phòng Trọ Cao Cấp Tiện Nghi</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+    
+    <!-- Google Fonts: Plus Jakarta Sans for modern design -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org Structured Data for Local Business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "An Nhiên House",
+      "image": [
+        "assets/images/room_studio.png",
+        "assets/images/room_1pn.png",
+        "assets/images/room_loft.png"
+      ],
+      "priceRange": "3,500,000 VND - 6,000,000 VND",
+      "telephone": "+84901234567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Số 123 Đường Nguyễn Văn Cừ, Phường 2",
+        "addressLocality": "Quận 5",
+        "addressRegion": "Thành phố Hồ Chí Minh",
+        "postalCode": "70000",
+        "addressCountry": "VN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.762622,
+        "longitude": 106.682245
+      },
+      "url": "https://annhienhouse.vn",
+      "description": "Khu căn hộ dịch vụ và phòng trọ cao cấp chuẩn hiện đại, an tâm, sạch sẽ.",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Camera an ninh 24/7",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Chỗ để xe rộng rãi",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Khóa cửa vân tay",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Vệ sinh hành lang hàng tuần",
+          "value": true
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#trang-chu" class="logo" id="logo-link">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">An Nhiên <span class="accent-text">House</span></span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#trang-chu" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#tien-ich" class="nav-link">Tiện ích</a></li>
+                    <li><a href="#loai-phong" class="nav-link">Loại phòng</a></li>
+                    <li><a href="#vi-tri" class="nav-link">Vị trí</a></li>
+                    <li><a href="#chinh-sach" class="nav-link">Chính sách</a></li>
+                    <li><a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" class="nav-cta-btn">Liên hệ ngay</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="trang-chu">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Khu Căn Hộ Cao Cấp Mới 100%
+                    </div>
+                    <h1 class="hero-title">Không gian sống lý tưởng<br><span class="highlight-text">Giờ giấc tự do</span> - An tâm tuyệt đối</h1>
+                    <p class="hero-subtitle">
+                        Trải nghiệm cuộc sống hiện đại, sạch sẽ và an toàn tại An Nhiên House. Phòng đầy đủ tiện nghi, an ninh tuyệt đối bằng khóa vân tay và camera 24/7.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="hero-zalo-cta">
+                            <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 5.82 2 10.5c0 2.67 1.45 5.04 3.75 6.6L4.5 21l4.5-2.25c.95.27 1.95.42 3 .42 5.52 0 10-3.82 10-8.5S17.52 2 12 2zm1 13h-2v-2h2v2zm0-4h-2V7h2v4z"/>
+                            </svg>
+                            Liên hệ Zalo: 0901 234 567
+                        </a>
+                        <a href="#loai-phong" class="btn btn-secondary" id="hero-explore-cta">Xem phòng trống</a>
+                    </div>
+                    
+                    <!-- Quick Specs Badges -->
+                    <div class="hero-features-preview">
+                        <div class="preview-item">
+                            <span class="preview-icon">🔑</span>
+                            <span class="preview-text">Tự do 24h</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="preview-icon">⚡</span>
+                            <span class="preview-text">Giá minh bạch</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="preview-icon">🛡️</span>
+                            <span class="preview-text">Bảo vệ 2 lớp</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <div class="hero-card-pattern"></div>
+                    <img src="assets/images/room_studio.png" alt="Không gian phòng Studio sang trọng tại An Nhiên House" class="hero-img" width="600" height="400">
+                    <div class="hero-floating-card card-left">
+                        <span class="floating-icon">✨</span>
+                        <div class="floating-info">
+                            <span class="info-title">Phòng trống</span>
+                            <span class="info-desc">Có sẵn dọn vào ngay</span>
+                        </div>
+                    </div>
+                    <div class="hero-floating-card card-right">
+                        <span class="floating-icon">⭐</span>
+                        <div class="floating-info">
+                            <span class="info-title">Giá chỉ từ</span>
+                            <span class="info-desc">3.5 Triệu / tháng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Tiện ích -->
+        <section class="amenities-section" id="tien-ich">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Tiện nghi vượt trội</span>
+                    <h2 class="section-title">Trải nghiệm sống an tâm & sạch sẽ</h2>
+                    <p class="section-desc">Chúng tôi đầu tư đồng bộ hạ tầng dịch vụ và an ninh để mang lại sự thoải mái tối đa cho quý cư dân.</p>
+                </div>
+                
+                <div class="amenities-grid">
+                    <!-- Tiện ích 1: Camera an ninh -->
+                    <div class="amenity-card">
+                        <div class="amenity-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
+                            </svg>
+                        </div>
+                        <h3 class="amenity-name">Camera An Ninh 24/7</h3>
+                        <p class="amenity-desc">Hệ thống camera giám sát hồng ngoại sắc nét lắp đặt khắp hành lang, bãi xe và khu vực chung, đảm bảo an toàn tối đa.</p>
+                    </div>
+
+                    <!-- Tiện ích 2: Chỗ để xe -->
+                    <div class="amenity-card">
+                        <div class="amenity-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124l-.847-13.56A1.125 1.125 0 0 0 19.38 3H4.62a1.125 1.125 0 0 0-1.118 1.066l-.847 13.56a1.124 1.124 0 0 0 1.09 1.124H5.25M12 3v15.75m0-15.75H8.25m3.75 0h3.75M8.25 7.5h7.5M8.25 11.25h7.5" />
+                            </svg>
+                        </div>
+                        <h3 class="amenity-name">Chỗ Để Xe Rộng Rãi</h3>
+                        <p class="amenity-desc">Nhà để xe trong nhà rộng rãi, có camera giám sát và sắp xếp xe gọn gàng. Có lối đi riêng biệt tiện lợi, không lo trầy xước xe.</p>
+                    </div>
+
+                    <!-- Tiện ích 3: Vệ sinh hành lang -->
+                    <div class="amenity-card">
+                        <div class="amenity-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18m-9-9 9 9-9 9-9-9 9-9Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+                            </svg>
+                        </div>
+                        <h3 class="amenity-name">Vệ Sinh Hành Lang Sạch Sẽ</h3>
+                        <p class="amenity-desc">Đội ngũ lao công quét dọn hành lang, khu đổ rác và khu sinh hoạt chung định kỳ 3 lần/tuần. Không gian luôn thơm mát, sạch sẽ.</p>
+                    </div>
+
+                    <!-- Tiện ích 4: Khóa vân tay -->
+                    <div class="amenity-card">
+                        <div class="amenity-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.5 7.5 0 1 0 15 0M9 10.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3 10.5v-3m0 0a3 3 0 0 0-3-3m3 3a3 3 0 0 0 3-3" />
+                            </svg>
+                        </div>
+                        <h3 class="amenity-name">Khóa Vân Tay Hai Lớp</h3>
+                        <p class="amenity-desc">Cửa ra vào tòa nhà tích hợp khóa vân tay sinh trắc học thông minh. Chỉ cư dân trong nhà mới có quyền truy cập, bảo đảm riêng tư.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Danh sách phòng -->
+        <section class="rooms-section" id="loai-phong">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Bảng giá & Thiết kế</span>
+                    <h2 class="section-title">Lựa chọn phòng phù hợp với bạn</h2>
+                    <p class="section-desc">Các căn hộ tại An Nhiên House được tối ưu diện tích, đón gió tự nhiên và bàn giao kèm nội thất cơ bản chất lượng cao.</p>
+                </div>
+                
+                <div class="rooms-grid">
+                    <!-- Phòng 1: Studio -->
+                    <article class="room-card" id="room-card-studio">
+                        <div class="room-img-container">
+                            <img src="assets/images/room_studio.png" alt="Phòng Studio Cao Cấp tiện nghi tại An Nhiên House" class="room-thumbnail" loading="lazy" width="400" height="280">
+                            <span class="room-status-badge available">Còn phòng</span>
+                        </div>
+                        <div class="room-info">
+                            <div class="room-meta">
+                                <span class="room-area">📐 22 - 25 m²</span>
+                                <span class="room-capacity">👥 1 - 2 Người</span>
+                            </div>
+                            <h3 class="room-title">Phòng Studio Hiện Đại</h3>
+                            <p class="room-intro">Không gian mở tích hợp khu bếp mini gọn gàng và tủ quần áo lớn. Thích hợp cho người đi làm và sinh viên ưa thích sự tiện lợi.</p>
+                            <div class="room-price-box">
+                                <span class="price-label">Giá thuê từ:</span>
+                                <span class="price-value">3.500.000đ<span class="price-period">/tháng</span></span>
+                            </div>
+                            <button class="btn btn-outline btn-full open-modal-btn" data-target="modal-studio" id="btn-detail-studio">Xem chi tiết</button>
+                        </div>
+                    </article>
+
+                    <!-- Phòng 2: 1PN -->
+                    <article class="room-card" id="room-card-1pn">
+                        <div class="room-img-container">
+                            <img src="assets/images/room_1pn.png" alt="Phòng 1PN Riêng biệt sang trọng tại An Nhiên House" class="room-thumbnail" loading="lazy" width="400" height="280">
+                            <span class="room-status-badge available">Còn phòng</span>
+                        </div>
+                        <div class="room-info">
+                            <div class="room-meta">
+                                <span class="room-area">📐 32 - 38 m²</span>
+                                <span class="room-capacity">👥 2 - 3 Người</span>
+                            </div>
+                            <h3 class="room-title">Phòng 1 Phòng Ngủ (1PN)</h3>
+                            <p class="room-intro">Thiết kế phòng ngủ riêng biệt ngăn cách bằng vách kính cao cấp, phòng khách ngập tràn ánh sáng. Thích hợp cho cặp đôi, gia đình nhỏ.</p>
+                            <div class="room-price-box">
+                                <span class="price-label">Giá thuê từ:</span>
+                                <span class="price-value">4.800.000đ<span class="price-period">/tháng</span></span>
+                            </div>
+                            <button class="btn btn-outline btn-full open-modal-btn" data-target="modal-1pn" id="btn-detail-1pn">Xem chi tiết</button>
+                        </div>
+                    </article>
+
+                    <!-- Phòng 3: Có gác -->
+                    <article class="room-card" id="room-card-loft">
+                        <div class="room-img-container">
+                            <img src="assets/images/room_loft.png" alt="Phòng Có Gác Lửng rộng rãi tại An Nhiên House" class="room-thumbnail" loading="lazy" width="400" height="280">
+                            <span class="room-status-badge limited">Chỉ còn 2 phòng</span>
+                        </div>
+                        <div class="room-info">
+                            <div class="room-meta">
+                                <span class="room-area">📐 28 - 30 m²</span>
+                                <span class="room-capacity">👥 2 - 4 Người</span>
+                            </div>
+                            <h3 class="room-title">Phòng Có Gác Lửng</h3>
+                            <p class="room-intro">Tối ưu hóa không gian với gác lửng đúc kiên cố cao ráo, trần cao thoáng đãng. Khu vực học tập và tiếp khách rộng rãi bên dưới.</p>
+                            <div class="room-price-box">
+                                <span class="price-label">Giá thuê từ:</span>
+                                <span class="price-value">3.800.000đ<span class="price-period">/tháng</span></span>
+                            </div>
+                            <button class="btn btn-outline btn-full open-modal-btn" data-target="modal-loft" id="btn-detail-loft">Xem chi tiết</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Vị trí -->
+        <section class="location-section" id="vi-tri">
+            <div class="container location-container">
+                <div class="location-content">
+                    <div class="section-header">
+                        <span class="section-tagline">Tọa lạc đắc địa</span>
+                        <h2 class="section-title">Kết nối nhanh chóng - Di chuyển thuận tiện</h2>
+                        <p class="section-desc">Nằm ở vị trí trung tâm, từ An Nhiên House bạn chỉ mất vài phút để di chuyển đến các trường đại học, chợ, siêu thị và bệnh viện lớn.</p>
+                    </div>
+
+                    <div class="location-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🎓</div>
+                            <div class="timeline-info">
+                                <h3 class="location-name">Đại học Sư Phạm Kỹ Thuật (SPKT)</h3>
+                                <p class="location-dist">500m (Khoảng 2 phút đi xe máy / 7 phút đi bộ)</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🎓</div>
+                            <div class="timeline-info">
+                                <h3 class="location-name">Đại học Hutech (Cơ sở E)</h3>
+                                <p class="location-dist">1.2 km (Khoảng 4 phút đi xe máy)</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🛍️</div>
+                            <div class="timeline-info">
+                                <h3 class="location-name">Chợ dân sinh & Co.opmart</h3>
+                                <p class="location-dist">300m (Chỉ 3 phút đi bộ mua sắm hàng ngày)</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🚌</div>
+                            <div class="timeline-info">
+                                <h3 class="location-name">Trạm Xe Buýt / Trạm Metro</h3>
+                                <p class="location-dist">150m (Thuận tiện di chuyển vào trung tâm)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-wrapper">
+                    <!-- Map Mockup / Styled Iframe (SEO Optimized & Accessible) -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.474978783457!2d106.77242441533423!3d10.851432460773827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175270ad2c0883f%3A0x925fbb0e29b13ee3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgcGjhuqFtIEvhu7kgdGh14bqtdCBUUC4gSENN!5e0!3m2!1svi!2s!4v1655182930491!5m2!1svi!2s" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade" 
+                            title="Bản đồ chỉ đường đến An Nhiên House"
+                            id="google-map-iframe">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Chính sách / Booking Callout (In Footer/Pre-footer structure) -->
+        <section class="policies-section" id="chinh-sach">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Rõ ràng - Minh bạch</span>
+                    <h2 class="section-title">Chính sách thuê phòng & Biểu phí</h2>
+                    <p class="section-desc">Chúng tôi công khai mọi chi phí và cam kết không phát sinh các khoản thu ngoài hợp đồng.</p>
+                </div>
+
+                <div class="policies-grid">
+                    <div class="policy-card">
+                        <div class="policy-header">
+                            <span class="policy-emoji">💰</span>
+                            <h3>Đặt cọc & Hợp đồng</h3>
+                        </div>
+                        <ul class="policy-list">
+                            <li><strong>Tiền đặt cọc:</strong> Chỉ cọc 1 tháng tiền phòng để giữ chỗ. Hoàn trả 100% khi hết hợp đồng.</li>
+                            <li><strong>Thời hạn hợp đồng:</strong> Linh hoạt từ 6 tháng đến 12 tháng.</li>
+                            <li><strong>Ký kết hợp đồng:</strong> Rõ ràng, pháp lý chuẩn chỉnh, bảo vệ quyền lợi hai bên.</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-card">
+                        <div class="policy-header">
+                            <span class="policy-emoji">⚡</span>
+                            <h3>Biểu phí dịch vụ</h3>
+                        </div>
+                        <ul class="policy-list">
+                            <li><strong>Tiền điện:</strong> 3.800 đ / kWh (Số ký điện theo công tơ riêng từng phòng).</li>
+                            <li><strong>Tiền nước:</strong> 100.000 đ / người / tháng.</li>
+                            <li><strong>Phí quản lý:</strong> 150.000 đ / phòng (Bao gồm rác, vệ sinh hành lang, thang máy, bảo trì khóa).</li>
+                            <li><strong>Gửi xe & Wifi:</strong> Miễn phí hoàn toàn.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cta-banner">
+                    <div class="cta-banner-content">
+                        <h3>Bạn đã tìm được căn phòng ưng ý?</h3>
+                        <p>Hãy liên hệ ngay với quản lý tòa nhà để đặt lịch hẹn xem phòng trực tiếp.</p>
+                    </div>
+                    <div class="cta-banner-actions">
+                        <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large" id="banner-zalo-cta">
+                            Liên hệ Zalo tư vấn miễn phí
+                        </a>
+                        <a href="tel:0901234567" class="btn btn-secondary-light btn-large" id="banner-call-cta">
+                            Hotline: 0901.234.567
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Detailed Room Modals -->
+    <!-- Modal 1: Studio -->
+    <div class="modal-backdrop" id="modal-studio" aria-hidden="true" role="dialog">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Đóng bảng thông tin" id="close-modal-studio">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img src="assets/images/room_studio.png" alt="Không gian chi tiết phòng Studio" class="modal-img">
+                </div>
+                <div class="modal-details-info">
+                    <span class="modal-room-type">Phòng Studio</span>
+                    <h3 class="modal-title">Phòng Studio Hiện Đại & Tiện Nghi</h3>
+                    <p class="modal-desc">
+                        Không gian sống lý tưởng được tối ưu hóa thiết kế mở. Phòng ngập tràn ánh sáng tự nhiên với ô cửa sổ kính lớn, trang bị sẵn nội thất thông minh chất lượng tốt.
+                    </p>
+                    
+                    <h4>Trang bị sẵn trong phòng:</h4>
+                    <ul class="modal-amenity-list">
+                        <li><span>🛏️</span> Giường nệm cao su non 1m6x2m</li>
+                        <li><span>👗</span> Tủ quần áo 2 cánh gỗ MDF chống ẩm</li>
+                        <li><span>🍳</span> Kệ bếp gỗ tích hợp bồn rửa inox, vách kính chịu nhiệt</li>
+                        <li><span>❄️</span> Máy lạnh Inverter 1.5 HP tiết kiệm điện</li>
+                        <li><span>🚿</span> Nhà vệ sinh riêng, bình nóng lạnh trực tiếp</li>
+                        <li><span>💻</span> Bàn làm việc/bàn học kèm ghế tựa</li>
+                    </ul>
+
+                    <div class="modal-pricing-row">
+                        <div>
+                            <span class="price-label">Giá thuê chỉ từ</span>
+                            <span class="modal-price">3.500.000đ <small>/ tháng</small></span>
+                        </div>
+                        <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-studio-zalo-cta">Đặt lịch xem phòng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: 1PN -->
+    <div class="modal-backdrop" id="modal-1pn" aria-hidden="true" role="dialog">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Đóng bảng thông tin" id="close-modal-1pn">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img src="assets/images/room_1pn.png" alt="Không gian chi tiết phòng 1PN" class="modal-img">
+                </div>
+                <div class="modal-details-info">
+                    <span class="modal-room-type">Căn Hộ 1 Phòng Ngủ</span>
+                    <h3 class="modal-title">Căn Hộ 1PN Cao Cấp - Tách Biệt Riêng Tư</h3>
+                    <p class="modal-desc">
+                        Sự kết hợp hoàn hảo giữa thiết kế hiện đại và sự riêng tư tuyệt đối. Phòng khách và phòng ngủ riêng biệt giúp tăng tính thẩm mỹ và ngăn mùi nấu ăn hiệu quả.
+                    </p>
+                    
+                    <h4>Trang bị sẵn trong phòng:</h4>
+                    <ul class="modal-amenity-list">
+                        <li><span>🚪</span> Phòng ngủ riêng biệt với vách ngăn kính cường lực sang trọng</li>
+                        <li><span>🛏️</span> Giường nệm cao cấp, táp đầu giường có cổng sạc</li>
+                        <li><span>🛋️</span> Sofa băng + bàn trà nhỏ xinh xắn tại phòng khách</li>
+                        <li><span>🍳</span> Tủ bếp trên dưới cực rộng rãi, sẵn bếp từ đơn</li>
+                        <li><span>❄️</span> Máy lạnh riêng cho phòng ngủ, máy giặt mini độc lập</li>
+                        <li><span>🚿</span> WC khép kín thiết kế hiện đại, vách kính tắm đứng</li>
+                    </ul>
+
+                    <div class="modal-pricing-row">
+                        <div>
+                            <span class="price-label">Giá thuê chỉ từ</span>
+                            <span class="modal-price">4.800.000đ <small>/ tháng</small></span>
+                        </div>
+                        <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-1pn-zalo-cta">Đặt lịch xem phòng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Loft -->
+    <div class="modal-backdrop" id="modal-loft" aria-hidden="true" role="dialog">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Đóng bảng thông tin" id="close-modal-loft">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img src="assets/images/room_loft.png" alt="Không gian chi tiết phòng có gác" class="modal-img">
+                </div>
+                <div class="modal-details-info">
+                    <span class="modal-room-type">Phòng Có Gác Lửng</span>
+                    <h3 class="modal-title">Phòng Trọ Gác Lửng Cao Cấp - Tối Ưu Diện Tích</h3>
+                    <p class="modal-desc">
+                        Dòng phòng được giới sinh viên và hội bạn thân ưa chuộng nhất. Thiết kế trần cao đón gió mát mẻ, gác lửng bê tông lát sàn nhựa vinyl chịu lực cực tốt và an toàn.
+                    </p>
+                    
+                    <h4>Trang bị sẵn trong phòng:</h4>
+                    <ul class="modal-amenity-list">
+                        <li><span>🪜</span> Gác lửng kiên cố chiều cao gác 1.8m (không lo đụng đầu)</li>
+                        <li><span>🛏️</span> Trang bị sẵn đệm gấp chất lượng tại gác lửng</li>
+                        <li><span>🍳</span> Khu vực bếp riêng phía dưới gác, trang bị tủ bếp</li>
+                        <li><span>❄️</span> Máy lạnh lắp ở vị trí đối lưu tối ưu mát cả gác lẫn trệt</li>
+                        <li><span>🚿</span> Nhà vệ sinh sạch sẽ, lát gạch nhám chống trơn trượt</li>
+                        <li><span>🧺</span> Chỗ phơi đồ riêng tại ban công đón nắng gió</li>
+                    </ul>
+
+                    <div class="modal-pricing-row">
+                        <div>
+                            <span class="price-label">Giá thuê chỉ từ</span>
+                            <span class="modal-price">3.800.000đ <small>/ tháng</small></span>
+                        </div>
+                        <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-loft-zalo-cta">Đặt lịch xem phòng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#trang-chu" class="logo logo-footer">
+                    <span>🏠</span> An Nhiên House
+                </a>
+                <p class="footer-about">
+                    Hệ thống căn hộ dịch vụ & phòng trọ cao cấp hàng đầu. Chúng tôi kiến tạo không gian sống tự do, an toàn và sạch sẽ, là nơi an cư lý tưởng cho sinh viên và người đi làm.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook An Nhiên House" class="social-link">🌐</a>
+                    <a href="https://zalo.me/0901234567" aria-label="Zalo liên hệ" class="social-link">💬</a>
+                    <a href="#" aria-label="Youtube kênh" class="social-link">📺</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="#trang-chu">Trang chủ</a></li>
+                    <li><a href="#tien-ich">Dịch vụ & Tiện ích</a></li>
+                    <li><a href="#loai-phong">Danh sách phòng</a></li>
+                    <li><a href="#vi-tri">Bản đồ vị trí</a></li>
+                    <li><a href="#chinh-sach">Biểu phí & Đặt cọc</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Thông tin liên hệ</h4>
+                <ul class="contact-info-list">
+                    <li>
+                        <span class="contact-icon">📍</span>
+                        <span class="contact-text">Số 123 Đường Nguyễn Văn Cừ, Phường 2, Quận 5, TP. Hồ Chí Minh</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📞</span>
+                        <span class="contact-text">Hotline đặt phòng: <a href="tel:0901234567" class="contact-link">0901.234.567</a></span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">💬</span>
+                        <span class="contact-text">Hỗ trợ Zalo: <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" class="contact-link">0901 234 567</a></span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">✉️</span>
+                        <span class="contact-text">Email: lienhe@annhienhouse.vn</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright">&copy; 2026 An Nhiên House. Bảo lưu mọi quyền. Thiết kế và tối ưu SEO bởi Antigravity.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <span class="separator">|</span>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#trang-chu" class="back-to-top" id="back-to-top-btn" aria-label="Quay lại đầu trang">▲</a>
+
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
+</body>
+</html>

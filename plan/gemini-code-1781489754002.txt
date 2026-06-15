@@ -1,0 +1,27 @@
+my-react-app/
+├── public/               # Chứa favicon, robots.txt, dữ liệu không cần compile
+└── src/
+    ├── assets/           # Chứa hình ảnh, icons (room_studio.png, room_1pn.png...)
+    ├── components/       # Các UI Component dùng chung, tái sử dụng nhiều lần
+    │   ├── Button/
+    │   ├── Modal/
+    │   ├── RoomCard/
+    │   └── SectionHeader/
+    ├── sections/         # Các khu vực chính của trang (tương ứng với các thẻ <section>)
+    │   ├── Hero/
+    │   ├── Amenities/
+    │   ├── Rooms/
+    │   ├── Location/
+    │   └── Policies/
+    ├── layout/           # Các component bố cục trang
+    │   ├── Header.jsx
+    │   └── Footer.jsx
+    ├── data/             # File chứa dữ liệu tĩnh (mock data) để render động
+    │   ├── roomsData.js
+    │   └── amenitiesData.js
+    ├── hooks/            # Chứa các custom hooks thay thế cho app.js cũ
+    │   ├── useScrollSpy.js
+    │   └── useStickyHeader.js
+    ├── App.jsx           # Component gốc ghép nối các layout và sections
+    ├── main.jsx          # Entry point
+    └── index.css         # Chứa toàn bộ nội dung file style.css của bạn
