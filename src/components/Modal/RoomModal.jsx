@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 /**
  * RoomModal component for displaying details of a specific room type
@@ -8,7 +8,20 @@ export const RoomModal = ({ room, onClose, zaloUrl }) => {
   if (!room) return null;
 
   const { title, price, image } = room;
-  const { roomType, title: modalTitle, desc, amenities } = room.modalDetails;
+  const { roomType, title: modalTitle, desc, amenities, images } = room.modalDetails;
+
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const sliderImages = images || [image];
+
+  const handlePrevImage = (e) => {
+    e.stopPropagation();
+    setActiveImageIndex((prev) => (prev === 0 ? sliderImages.length - 1 : prev - 1));
+  };
+
+  const handleNextImage = (e) => {
+    e.stopPropagation();
+    setActiveImageIndex((prev) => (prev === sliderImages.length - 1 ? 0 : prev + 1));
+  };
 
   const closeButtonRef = useRef(null);
 
@@ -66,7 +79,42 @@ export const RoomModal = ({ room, onClose, zaloUrl }) => {
         </button>
         <div className="modal-body">
           <div className="modal-gallery">
-            <img src={image} alt={`Không gian chi tiết ${roomType}`} className="modal-img" />
+            <img 
+              src={sliderImages[activeImageIndex]} 
+              alt={`Không gian chi tiết ${roomType} - Ảnh ${activeImageIndex + 1}`} 
+              className="modal-img" 
+            />
+            {sliderImages.length > 1 && (
+              <>
+                <button 
+                  type="button" 
+                  className="gallery-nav-btn prev-btn" 
+                  onClick={handlePrevImage} 
+                  aria-label="Ảnh trước"
+                >
+                  &lsaquo;
+                </button>
+                <button 
+                  type="button" 
+                  className="gallery-nav-btn next-btn" 
+                  onClick={handleNextImage} 
+                  aria-label="Ảnh sau"
+                >
+                  &rsaquo;
+                </button>
+                <div className="gallery-dots">
+                  {sliderImages.map((_, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      className={`gallery-dot ${idx === activeImageIndex ? 'active' : ''}`}
+                      onClick={() => setActiveImageIndex(idx)}
+                      aria-label={`Xem ảnh ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
           </div>
           <div className="modal-details-info">
             <span className="modal-room-type">{roomType}</span>

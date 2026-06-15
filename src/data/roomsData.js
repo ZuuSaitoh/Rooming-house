@@ -22,6 +22,13 @@ export const roomsData = [
       roomType: "Phòng Studio",
       title: "Phòng Studio Hiện Đại & Tiện Nghi",
       desc: "Không gian sống lý tưởng được tối ưu hóa thiết kế mở. Phòng ngập tràn ánh sáng tự nhiên với ô cửa sổ kính lớn, trang bị sẵn nội thất thông minh chất lượng tốt.",
+      images: [
+        "/assets/images/room_studio_bedroom.png",
+        "/assets/images/room_studio.png",
+        "/assets/images/room_studio_bedroom.png",
+        "/assets/images/room_studio.png",
+        "/assets/images/room_studio_bedroom.png"
+      ],
       amenities: [
         { icon: "🛏️", text: "Giường nệm cao su non 1m6x2m" },
         { icon: "👗", text: "Tủ quần áo 2 cánh gỗ MDF chống ẩm" },
@@ -46,6 +53,13 @@ export const roomsData = [
       roomType: "Căn Hộ 1 Phòng Ngủ",
       title: "Căn Hộ 1PN Cao Cấp - Tách Biệt Riêng Tư",
       desc: "Sự kết hợp hoàn hảo giữa thiết kế hiện đại và sự riêng tư tuyệt đối. Phòng khách và phòng ngủ riêng biệt giúp tăng tính thẩm mỹ và ngăn mùi nấu ăn hiệu quả.",
+      images: [
+        "/assets/images/room_1pn_bedroom.png",
+        "/assets/images/room_1pn.png",
+        "/assets/images/room_1pn_bedroom.png",
+        "/assets/images/room_1pn.png",
+        "/assets/images/room_1pn_bedroom.png"
+      ],
       amenities: [
         { icon: "🚪", text: "Phòng ngủ riêng biệt với vách ngăn kính cường lực sang trọng" },
         { icon: "🛏️", text: "Giường nệm cao cấp, táp đầu giường có cổng sạc" },
@@ -70,6 +84,13 @@ export const roomsData = [
       roomType: "Phòng Có Gác Lửng",
       title: "Phòng Trọ Gác Lửng Cao Cấp - Tối Ưu Diện Tích",
       desc: "Dòng phòng được giới sinh viên và hội bạn thân ưa chuộng nhất. Thiết kế trần cao đón gió mát mẻ, gác lửng bê tông lát sàn nhựa vinyl chịu lực cực tốt và an toàn.",
+      images: [
+        "/assets/images/room_loft_bedroom.png",
+        "/assets/images/room_loft.png",
+        "/assets/images/room_loft_bedroom.png",
+        "/assets/images/room_loft.png",
+        "/assets/images/room_loft_bedroom.png"
+      ],
       amenities: [
         { icon: "🪜", text: "Gác lửng kiên cố chiều cao gác 1.8m (không lo đụng đầu)" },
         { icon: "🛏️", text: "Trang bị sẵn đệm gấp chất lượng tại gác lửng" },
